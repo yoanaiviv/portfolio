@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; 
+    
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;           
+}
+
+body {
+    background-color: #f8f8f8;  
+    overflow-x: hidden;
+    opacity: 0;
+}
+
+/*Menu styles*/
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 5%;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+#main-nav img {
+    width: 25px;
+    height: auto;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #2D2D2D;
+    z-index: 1;
+    display: inline-block;
+    transition: transform 0.5s ease-out;
+}
+
+#main-nav a:hover {
+    transform: scale(1.1);
+    animation: shake 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(-3deg);
+    }
+    100% {
+        transform: rotateZ(3deg);
+    }
+}
+
+.home-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pages-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.pages-buttons a {
+    margin: 0 10px;
+}
+
+.socials-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials-buttons a {
+    margin-left: 10px;
+}
+
+
+
+/*Body styles*/
+#main-page {
+    height: 90%;
+    width: 90%;
+}
+
+footer {
+    height: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    color: #777777;
+    background-color: #f8f8f8;
+    border-top: 1px solid #2D2D2D; 
+    z-index: 1;
+}
+
+.background-image {
+    position: fixed;
+    top: -77.5px;
+    left: -226.5px;
+    width: 453px;
+    height: 255.1px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.background-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 255.1px;
+    width: 453px;
+    object-fit: cover;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 20.18em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
+
+/* Animation */
+.anim-typewriter{
+  width:0;
+  /*animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;*/
+}
